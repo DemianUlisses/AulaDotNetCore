@@ -24,6 +24,7 @@ namespace RazorPagesMovie.Models
         [Required(ErrorMessage = "Obrigatório informar o preço!")]
         public decimal Price { get; set; }
         public int DiretorID { get; set; }
+        [Range(1, 100, ErrorMessage = "Obrigado Informar o diretor")]
         public Diretor Diretor { get; set; }
     }
 }

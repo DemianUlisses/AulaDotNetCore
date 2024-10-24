@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RazorPagesMovie.Models
 {
-    public class Diretor
+    public class Director
     {
         public int ID { get; set; }
         [StringLength(60, MinimumLength = 3, ErrorMessage = "O nome deve ter entre 3 e 60 caracteres!")]
@@ -15,6 +15,7 @@ namespace RazorPagesMovie.Models
         [Display(Name = "Data de Nascimento")]
         [DataType(DataType.Date)]
         public DateTime BirthDay { get; set; }
+
         public ICollection<Movie> Movies { get; set; }
     }
 }

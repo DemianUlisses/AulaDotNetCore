@@ -25,6 +25,14 @@ namespace RazorPagesMovie.Models
         public decimal Price { get; set; }
         public int DiretorID { get; set; }
         [Range(1, 100, ErrorMessage = "Obrigado Informar o diretor")]
-        public Diretor Diretor { get; set; }
+
+        public Director Diretor { get; set; }
     }
 }
+
+
+
+
+ "Informe o nome do perfil de usuário."
+ "Informe a situação do perfil de usuário."
+ 
